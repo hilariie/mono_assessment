@@ -37,7 +37,7 @@ This task receives a list of transactions fetched from Mono's statement API and 
 * cd mono_assessment
 * pip install -r requirements.txt
 * python mono_api.py
-* enter 127.0.0.1:5049/docs in browser
+* enter `127.0.0.1:5049/docs` in browser
 * paste list of transactions and execute
   * If you don't have list of transactions, go to mono.py, line 103 and copy.
 * Download data
