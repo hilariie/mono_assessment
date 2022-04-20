@@ -21,8 +21,3 @@ def grouptransactions(transactions: List[Transaction]):
         "status": "success",
         "data": data
     }
-
-
-# specify a different port
-if __name__ == "__main__":
-    uvicorn.run(app, host="127.0.0.1", port=5049)
