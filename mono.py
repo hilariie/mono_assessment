@@ -3,6 +3,7 @@ import numpy as np
 import re
 from datetime import datetime
 from sklearn.cluster import KMeans
+import nltk
 nltk.download("stopwords")
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
@@ -130,7 +131,7 @@ if __name__ == "__main__":
           "date": "2022-01-24T14:06:00.000Z"
         }
       ]
-    
+
     response_list = [{"narration": "NIP/FBN/AKPU CHUKWUMA HILARY JNR./FBNMOBILE:CHUKWUMA HILARY AKPU/ND",
                       "amount": 000,
                       "type": "credit",
