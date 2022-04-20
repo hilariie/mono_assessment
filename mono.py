@@ -4,6 +4,7 @@ import re
 from datetime import datetime
 from sklearn.cluster import KMeans
 import nltk
+nltk.download('omw-1.4')
 nltk.download("stopwords")
 nltk.download('wordnet')
 from nltk.corpus import stopwords
