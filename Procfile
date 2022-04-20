@@ -1,1 +1,1 @@
-bot: python mono_api.py
+web: python mono_api.py
