@@ -1,1 +1,1 @@
-web: python mono_api.py
+web: uvicorn mono_api:app --workers 4
