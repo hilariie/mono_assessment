@@ -1,1 +1,0 @@
-web: uvicorn mono_api:app --workers 4
