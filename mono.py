@@ -3,6 +3,7 @@ import numpy as np
 import re
 from datetime import datetime
 from sklearn.cluster import KMeans
+nltk.download("stopwords")
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -100,6 +101,36 @@ def transaction_grouping(response_list):
 
 
 if __name__ == "__main__":
+    response_list1 = [
+        {"narration": "-062768- -327662-BLACKBELL RESTAURANT LA  LANG",
+          "amount": 500000,
+          "type": "debit",
+          "date": "2022-02-10T14:06:00.000Z"},
+    {"narration": "USSD -044502- -327662-BLACKBELL RESTAURANT LA  LANG",
+          "amount": 100000,
+          "type": "debit",
+          "date": "2022-03-01T14:06:00.000Z"
+        },
+    {
+          "narration": "-003894- -118817-CHICKEN REPUBLIC LA  LANG",
+          "amount": 250000,
+          "type": "debit",
+          "date": "2022-01-10T14:06:00.000Z"
+        },
+        {
+          "narration": "-010222- -118817-CHICKEN REPUBLIC LA  LANG",
+          "amount": 120000,
+          "type": "debit",
+          "date": "2022-01-17T14:06:00.000Z"
+        },
+        {
+          "narration": "-010172- -120017-CHICKEN REPUBLIC LA  LANG",
+          "amount": 170000,
+          "type": "debit",
+          "date": "2022-01-24T14:06:00.000Z"
+        }
+      ]
+    
     response_list = [{"narration": "NIP/FBN/AKPU CHUKWUMA HILARY JNR./FBNMOBILE:CHUKWUMA HILARY AKPU/ND",
                       "amount": 000,
                       "type": "credit",
